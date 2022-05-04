@@ -26,7 +26,7 @@ body {
   font-size: 1.3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 150vh;
-  background: linear-gradient(lightblue, white);
+  background: linear-gradient(#F0CB35, #C02425)
 }
 
 input {
@@ -51,9 +51,23 @@ table, th, td {
   background-color: white;
 }
 
-.non-veg-item {
+.contains-seed-oil {
   background-color: red;
 }
-.unknown-item {
+
+.contains-sugar {
   background-color: yellow;
+}
+
+section {
+  text-align: start;
+  margin-left: 50px;
+}
+
+section > h5 + h5 {
+  color: yellow;
+}
+
+section > h5 {
+  color: red;
 }

@@ -6,7 +6,7 @@
   	<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Is this Vegetarian?</title>
+		<title>Seed Oil Checker</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -14,18 +14,23 @@
 	</head>
 	<body>
 
-		<h1>Is this Vegetarian?</h1>
+		<h1>Seed Oil Checker</h1>
 
-		<label for="barcode">Enter a UPC barcode number (12 digits)</label>
+		<label for="barcode">Please enter your product's barcode</label>
 		<input type="number" id="barcode" name="barcode">
-		<button type="button">Get Value</button>
+		<button type="button">Submit</button>
+
+		<section>
+			<h3>Legend:</h3>
+			<h5>Red: contains seed oils</h5>
+			<h5>Yellow: contains other seed oil adjacent items</h5>
+		</section>
 
 		<img id="product-img" src="">
 		<h2 id="product-name"></h2>
 		<table id="ingredient-table">
 			<tr>
 				<th>Ingredient</th>
-				<th>Vegetarian?</th>
 			</tr>
 		</table>
 
