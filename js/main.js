@@ -12,7 +12,6 @@ function getFetch() {
 
         if (data.status === 1) {
             // pass data.product into the ProductInfo class
-            // data.product.ingredients.forEach(item => console.log(item.text))
             const product = new ProductInfo(data.product)
             product.displayItem()
             product.displayTable()
@@ -68,9 +67,6 @@ class ProductInfo {
                 } else if (this.ingredients[key].text === 'sugar' || this.ingredients[key].text.includes('soya')) {
                     newIngredientCell.classList.add('contains-sugar')
                 }
-
-                console.log(tableRef.rows.length)
-
         }
 
     }
